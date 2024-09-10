@@ -59,6 +59,8 @@ func main() {
 
 	fmt.Println("DB Connected")
 
+	Setup()
+
 	http.HandleFunc("/animals", PostAnimals)
 	http.HandleFunc("/foo", fooHandler)
 	http.HandleFunc("/animals/{id}", animalHandler)
